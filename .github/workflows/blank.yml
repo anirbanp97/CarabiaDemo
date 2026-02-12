@@ -1,7 +1,6 @@
 name: Hello World
 
-on:
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   hello:
@@ -9,5 +8,8 @@ jobs:
 
     steps:
       - name: Hello Step
-        run: echo "Welcome to GHA"
+        run: |
+          echo "This is line one"
+          echo "This is line two"
+
 
